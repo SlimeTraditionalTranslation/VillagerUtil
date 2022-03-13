@@ -1,7 +1,7 @@
 version: "1"
 rules:
-  - base: master
-    upstream: Apeiros-46B:master
+  - base: main
+    upstream: Apeiros-46B:main
     mergeMethod: merge
     conflictReviewers:
       - weiii-joe

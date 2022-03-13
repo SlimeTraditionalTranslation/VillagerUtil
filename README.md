@@ -12,7 +12,7 @@
 | 非官方繁體中文版 | 官方英文版 |
 | -------- | -------- |
 | 點下方圖片下載 | 點下方圖片下載 |
-| [![Build Status](https://xMikux.github.io/builds/SlimeTraditionalTranslation/VillagerUtil/master/badge.svg)](https://xMikux.github.io/builds/SlimeTraditionalTranslation/VillagerUtil/master) | [![Build Status](https://thebusybiscuit.github.io/builds/Apeiros-46B/VillagerUtil/main/badge.svg)](https://thebusybiscuit.github.io/builds/Apeiros-46B/VillagerUtil/main) |
+| [![Build Status](https://xMikux.github.io/builds/SlimeTraditionalTranslation/VillagerUtil/main/badge.svg)](https://xMikux.github.io/builds/SlimeTraditionalTranslation/VillagerUtil/main) | [![Build Status](https://thebusybiscuit.github.io/builds/Apeiros-46B/VillagerUtil/main/badge.svg)](https://thebusybiscuit.github.io/builds/Apeiros-46B/VillagerUtil/main) |
 
 ---
 

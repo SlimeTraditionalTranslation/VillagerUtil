@@ -27,62 +27,62 @@ public class Setup {
 
     // Item constants
     public static final SlimefunItemStack ESSENCE = new SlimefunItemStack(
-            "VU_ESSENCE", Material.GLOWSTONE_DUST, "&dVillager Essence",
-            "&7A rare, mysterious dust which is a key",
-            "&7component of Villager Magic",
+            "VU_ESSENCE", Material.GLOWSTONE_DUST, "&d村民精華",
+            "&7稀有而神秘的塵埃,是一把鑰匙",
+            "&7村民魔法的部分組成",
             "",
-            "&eIngredient &9&o(Villager Utils)");
+            "&e材料 &9&o(村民工具包)");
 
     public static final SlimefunItemStack TOKEN = new SlimefunItemStack(
-            "VU_TOKEN", Material.EMERALD, "&bVillager Token",
-            "&7A special item that is needed",
-            "&7to cast Villager Magic",
+            "VU_TOKEN", Material.EMERALD, "&b村民代幣",
+            "&7需要的特殊物品",
+            "&7施放村民魔法",
             "",
-            "&aConsumable &9&o(Villager Utils)");
+            "&a消耗品 &9&o(村民工具包)");
 
     public static final SlimefunItemStack TRANSPORT_CHARM = new SlimefunItemStack(
-            "VU_TRANSPORT_CHARM", VILLAGER, "&a&lVillager Charm",
-            "&7A magical charm which will teleport",
-            "&7the associated villager to its location",
-            "&eRight Click &7to teleport the villager",
+            "VU_TRANSPORT_CHARM", VILLAGER, "&a&l村民護身符",
+            "&7會傳送的魔法符咒",
+            "&7連結村民到你所在地",
+            "&e右鍵點擊 &7傳送村民",
             "",
-            "&7No villager linked",
+            "&7沒有村民連結",
             "",
-            "&bTool &9&o(Villager Utils)");
+            "&b工具 &9&o(村民工具包)");
 
     public static final SlimefunItemStack TRANSPORT_WAND = new SlimefunItemStack(
-            "VU_TRANSPORT_WAND", Material.BLAZE_ROD, "&cVillager Transport Wand",
-            "&eRight Click &7on a villager",
-            "&7to recieve a Villager Charm",
-            "&7linked to that villager",
+            "VU_TRANSPORT_WAND", Material.BLAZE_ROD, "&c村民運輸魔杖",
+            "&e右鍵點擊 &7在村民身上",
+            "&7獲得與此村民有關",
+            "&7的護身符",
             "",
-            "&bTool &9&o(Villager Utils)");
+            "&b工具 &9&o(村民工具包)");
 
     public static final SlimefunItemStack TRADE_WAND = new SlimefunItemStack(
-            "VU_TRADE_WAND", Material.BLAZE_ROD, "&6Villager Trade Wand",
-            "&eRight Click &7on a villager",
-            "&7to cycle its trades",
+            "VU_TRADE_WAND", Material.BLAZE_ROD, "&6村民貿易魔杖",
+            "&e右鍵點擊 &7在村民身上",
+            "&7循環村民交易",
             "",
-            "&bTool &9&o(Villager Utils)");
+            "&b工具 &9&o(村民工具包)");
 
     public static final SlimefunItemStack CURE_WAND = new SlimefunItemStack(
-            "VU_CURE_WAND", Material.BLAZE_ROD, "&aVillager Cure Wand",
-            "&eRight Click &7on a zombified villager",
-            "&7to cure it from its ailment",
+            "VU_CURE_WAND", Material.BLAZE_ROD, "&a村民治愈魔杖",
+            "&e右鍵點擊 &7在殭屍村民身上",
+            "&7來治療它的痛病",
             "",
-            "&bTool &9&o(Villager Utils)");
+            "&b工具 &9&o(村民工具包)");
 
     public static final SlimefunItemStack NITWIT_WAND = new SlimefunItemStack(
-            "VU_NITWIT_WAND", Material.BLAZE_ROD, "&5Villager De-nitwit-ifier",
-            "&eRight Click &7on a nitwit-type villager",
-            "&7to allow it to get a job",
+            "VU_NITWIT_WAND", Material.BLAZE_ROD, "&5村民反智者",
+            "&e右鍵點擊 &7在傻子村民身上",
+            "&7讓他找到工作",
             "",
-            "&bTool &9&o(Villager Utils)");
+            "&b工具 &9&o(村民工具包)");
 
     // Setup methods
     public static void setup(VillagerUtil p) {
         // Setup category and researches
-        ItemGroup ig = new ItemGroup(Utils.key("villager_util"), new CustomItemStack(Material.EMERALD_BLOCK, "&aVillager Utils"));
+        ItemGroup ig = new ItemGroup(Utils.key("villager_util"), new CustomItemStack(Material.EMERALD_BLOCK, "&a村民工具包"));
         ig.register(p);
 
         // Setup /resetvillager command

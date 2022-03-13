@@ -63,21 +63,21 @@ public class TradeWand extends SlimefunItem implements Listener {
 
                 // Check for permission
                 if (!Slimefun.getProtectionManager().hasPermission(p, p.getLocation(), Interaction.INTERACT_ENTITY)) {
-                    p.sendMessage(ChatColors.color("&cYou don't have permission!"));
+                    p.sendMessage(ChatColors.color("&c你沒有權限!"));
                     v.shakeHead();
                     return;
                 }
 
                 // Check if the villager has no job or is a nitwit
                 if (prof == Profession.NONE || prof == Profession.NITWIT) {
-                    p.sendMessage(ChatColors.color("&cThis villager does not have a job!"));
+                    p.sendMessage(ChatColors.color("&c這個村民沒有職業!"));
                     v.shakeHead();
                     return;
                 }
 
                 // Check for villager tokens
                 if (!Utils.hasToken(p, inv)) {
-                    p.sendMessage(ChatColors.color("&cInsufficient Villager Tokens!"));
+                    p.sendMessage(ChatColors.color("&c村民代幣不足!"));
                     v.shakeHead();
                     return;
                 }
@@ -117,11 +117,11 @@ public class TradeWand extends SlimefunItem implements Listener {
     // Sends warning to players trying to reset a locked villager
     private void sendWarning(Player p) {
         // Send normal messages
-        p.sendMessage(ChatColors.color("&cThis villager has its trades locked."));
-        p.sendMessage(ChatColors.color("&cAre you sure you want to reset its trades?"));
+        p.sendMessage(ChatColors.color("&c該村民的交易已被鎖定."));
+        p.sendMessage(ChatColors.color("&c你確定要重置其交易?"));
 
         // Create component
-        BaseComponent message = new TextComponent(ChatColors.color("&6Click here &7to reset this villager's trades"));
+        BaseComponent message = new TextComponent(ChatColors.color("&6點擊這裡 &7重置該村民的交易"));
         message.setClickEvent(new ClickEvent(Action.RUN_COMMAND, 
                 "/resetvillager " + VillagerUtil.getCommandNumber()));
 
@@ -136,8 +136,8 @@ public class TradeWand extends SlimefunItem implements Listener {
 
         // Check if the villager exists
         if (v == null) {
-            p.sendMessage(ChatColors.color("&cConfirmation took too long!"));
-            p.sendMessage(ChatColors.color("&cRight click the villager again and click on the chat message."));
+            p.sendMessage(ChatColors.color("&c確認時間過長!"));
+            p.sendMessage(ChatColors.color("&c再次右鍵點擊村民,然後點擊聊天消息."));
         } else {
             // Store the profession and the player's inventory
             Inventory inv = p.getInventory();
@@ -148,21 +148,21 @@ public class TradeWand extends SlimefunItem implements Listener {
 
             // Check for permission
             if (!Slimefun.getProtectionManager().hasPermission(p, p.getLocation(), Interaction.INTERACT_ENTITY)) {
-                p.sendMessage(ChatColors.color("&cYou don't have permission!"));
+                p.sendMessage(ChatColors.color("&c你沒有權限!"));
                 v.shakeHead();
                 return;
             }
 
             // Check if the villager has no job or is a nitwit
             if (prof == Profession.NONE || prof == Profession.NITWIT) {
-                p.sendMessage(ChatColors.color("&cThis villager does not have a job!"));
+                p.sendMessage(ChatColors.color("&c這個村民沒有職業!"));
                 v.shakeHead();
                 return;
             }
 
             // Check for villager tokens
             if (!Utils.hasToken(p, inv)) {
-                p.sendMessage(ChatColors.color("&cInsufficient Villager Tokens!"));
+                p.sendMessage(ChatColors.color("&c村民代幣不足!"));
                 v.shakeHead();
                 return;
             }

@@ -32,13 +32,13 @@ public class TransportWand extends SlimefunItem {
 
     // Charm lore when there is a villager linked
     private final List<String> linkedVillagerLore = List.of(
-        ChatColors.color("&7A magical charm which will teleport"),
-        ChatColors.color("&7the associated villager to its location"),
-        ChatColors.color("&eRight Click &7to teleport the villager"),
+        ChatColors.color("&7會傳送的魔法符咒"),
+        ChatColors.color("&7連接村民至此位置"),
+        ChatColors.color("&e右鍵點擊 &7傳送村民"),
         "",
-        ChatColors.color("&aVillager linked!"),
+        ChatColors.color("&a村民連接!"),
         "",
-        ChatColors.color("&bTool &9&o(Villager Utils)")
+        ChatColors.color("&b工具 &9&o(村民工具包)")
     );
 
     // NamespacedKey for PDC
@@ -69,14 +69,14 @@ public class TransportWand extends SlimefunItem {
 
                 // Check for permission
                 if (!Slimefun.getProtectionManager().hasPermission(p, p.getLocation(), Interaction.INTERACT_ENTITY)) {
-                    p.sendMessage(ChatColors.color("&cYou don't have permission!"));
+                    p.sendMessage(ChatColors.color("&c沒有權限!"));
                     v.shakeHead();
                     return;
                 }
 
                 // Check for villager tokens
                 if (!Utils.hasToken(p, inv)) {
-                    p.sendMessage(ChatColors.color("&cInsufficient Villager Tokens!"));
+                    p.sendMessage(ChatColors.color("&c村民代幣不足!"));
                     v.shakeHead();
                     return;
                 }
@@ -102,7 +102,7 @@ public class TransportWand extends SlimefunItem {
                         // Consume villager token
                         Utils.removeToken(p, inv);
                     } else {
-                        p.sendMessage(ChatColors.color("&cYou don't have enough inventory space!"));
+                        p.sendMessage(ChatColors.color("&c您沒有足夠的庫存空間!"));
                     }
 
                     // Play sounds

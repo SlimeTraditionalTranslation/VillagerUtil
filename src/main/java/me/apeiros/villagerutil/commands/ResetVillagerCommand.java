@@ -46,10 +46,10 @@ public class ResetVillagerCommand implements CommandExecutor {
                 // Reset villager's trades
                 TradeWand.resetLockedTrades(p);
             } else {
-                p.sendMessage(ChatColors.color("&cInvalid command!"));
+                p.sendMessage(ChatColors.color("&c無效指令!"));
             }
         } else {
-            sender.sendMessage(ChatColors.color("&cOnly players are able to execute this command!"));
+            sender.sendMessage(ChatColors.color("&c只有玩家才能執行此指令!"));
         }
 
         return true;

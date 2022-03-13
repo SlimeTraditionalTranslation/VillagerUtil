@@ -6,9 +6,6 @@
 
 需求 Minecraft 1.18 和  [Slimefun](https://github.com/Slimefun/Slimefun4)
 
----
-## 下載村民工具包
-
 > 此為**非官方**版本, 請勿在該作者問題追蹤內回報! <br>
 > [原作連結](https://github.com/Apeiros-46B/VillagerUtil) | [非官方Discord](https://discord.gg/GF4CwjFXT9)
 
@@ -16,6 +13,8 @@
 | -------- | -------- |
 | 點下方圖片下載 | 點下方圖片下載 |
 | [![Build Status](https://xMikux.github.io/builds/SlimeTraditionalTranslation/VillagerUtil/master/badge.svg)](https://xMikux.github.io/builds/SlimeTraditionalTranslation/VillagerUtil/master) | [![Build Status](https://thebusybiscuit.github.io/builds/Apeiros-46B/VillagerUtil/main/badge.svg)](https://thebusybiscuit.github.io/builds/Apeiros-46B/VillagerUtil/main) |
+
+---
 
 ### 物品清單:
 

@@ -1,0 +1,9 @@
+version: "1"
+rules:
+  - base: master
+    upstream: Apeiros-46B:master
+    mergeMethod: merge
+    conflictReviewers:
+      - weiii-joe
+      - xwinhyukx
+      - xMikux

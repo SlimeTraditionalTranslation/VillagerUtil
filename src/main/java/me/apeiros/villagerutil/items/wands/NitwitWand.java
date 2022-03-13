@@ -51,21 +51,21 @@ public class NitwitWand extends SlimefunItem {
 
                 // Check for permission
                 if (!Slimefun.getProtectionManager().hasPermission(p, p.getLocation(), Interaction.INTERACT_ENTITY)) {
-                    p.sendMessage(ChatColors.color("&cYou don't have permission!"));
+                    p.sendMessage(ChatColors.color("&c你沒有權限!"));
                     v.shakeHead();
                     return;
                 }
 
                 // Check if villager is a nitwit
                 if (v.getProfession() != Profession.NITWIT) {
-                    p.sendMessage(ChatColors.color("&cThis villager is not a nitwit!"));
+                    p.sendMessage(ChatColors.color("&c這個村民不是傻子!"));
                     v.shakeHead();
                     return;
                 }
 
                 // Check for villager tokens
                 if (!Utils.hasToken(p, inv)) {
-                    p.sendMessage(ChatColors.color("&cInsufficient Villager Tokens!"));
+                    p.sendMessage(ChatColors.color("&c村民代幣不足!"));
                     v.shakeHead();
                     return;
                 }

@@ -5,7 +5,7 @@ name: VillagerUtil
 author: Apeiros
 
 ## CHANGE this to a meaninful but short description of your plugin.
-description: A small Slimefun4 addon that adds a few convenience features related to villagers
+description: 黏液科技附加 村民工具包 繁體翻譯版.
 
 ## CHANGE this to the path of the class that extends JavaPlugin.
 main: me.apeiros.villagerutil.VillagerUtil

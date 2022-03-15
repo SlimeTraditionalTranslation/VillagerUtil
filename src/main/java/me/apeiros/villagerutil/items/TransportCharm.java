@@ -41,7 +41,7 @@ public class TransportCharm extends SlimefunItem {
     private static final RecipeType transportWandRecipeType = new RecipeType(
             Utils.key("transport_wand_recipe_type"), 
             Setup.TRANSPORT_WAND,
-            "&7&o右鍵點擊此村名",
+            "&7&o右鍵點擊此村民",
             "&7&o給 &b村民運輸魔杖",
             "&7&o獲得 &b與該村民相關的",
             "&7&o村民運輸護身符");
